@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BigBangAssesmentProject.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace BigBangAssesment.Models
 {
@@ -14,5 +15,7 @@ namespace BigBangAssesment.Models
 
         // Navigation property for the hotel
         public Hotel? Hotel { get; set; }
+
+        public ICollection<Bookings>? Booking { get; set; }
     }
 }
